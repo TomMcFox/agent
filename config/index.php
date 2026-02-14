@@ -2,7 +2,8 @@
 
 return [
     'titel' => 'Outsource Agentur',
-    'version' => '1.0'
+    'version' => '1.0',
+    'domain' => 'www.test.de'
 ];
 
 ?>

@@ -1,16 +1,17 @@
 <?php
 
 $config = require 'config/index.php'; 
-$login = require 'config/login.php'; 
+$login = require 'config/login.php';  
 
-$domain = 'www.test.de';
+$titel = $config['titel'];
+$domain = $config['domain'];
 ?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optimierter Titel für Suchmaschinen | Keyword</title>
+    <title><?= $titel ?> | Keyword</title>
     <meta name="description" content="Hier steht eine aussagekräftige Beschreibung der Seite, die in den Suchergebnissen angezeigt wird (ca. 150-160 Zeichen).">
     <link rel="canonical" href="https://<?= $domain ?>/">
 
