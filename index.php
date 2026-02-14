@@ -32,11 +32,19 @@ $domain = 'www.test.de';
 </head>
 <body>
   <main>
-    <div id="screen">
-      <div>sprich 
-        <br><br>
-        testlauf
-      </div>
+    <div id="screen" class="login-container">
+      <form class="login-form" action="" method="POST">
+        <h2>Login</h2>
+        <div class="input-group">
+          <label for="username">Benutzername</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Passwort</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Anmelden</button>
+      </form>
     </div>
   </main>
 
