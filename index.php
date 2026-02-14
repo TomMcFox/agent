@@ -1,14 +1,7 @@
 <?php
 
-
 $config = require __DIR__ . '/config/index.php';
 $login =  require __DIR__ . '/config/login.php';
-
-if ($_SERVER['HTTP_HOST'] !== $config['domain']) {
-    header('Location: https://' . $config['domain'] . $_SERVER['REQUEST_URI'], true, 301);
-    exit;
-}
-
 
 $titel = $config['titel'];
 $domain = $config['domain'];
