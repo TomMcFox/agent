@@ -1,0 +1,2 @@
+# Simuliert, dass das Verzeichnis nicht existiert (404 Not Found)
+RedirectMatch 404 ^
