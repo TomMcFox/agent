@@ -1,7 +1,7 @@
 <?php
 
-$config = require_once 'config/index.php'; 
-$login = require_once 'config/login.php'; 
+$config = require 'config/index.php'; 
+$login = require 'config/login.php'; 
 
 $domain = 'www.test.de';
 ?>
