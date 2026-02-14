@@ -1,4 +1,59 @@
 <?php
-echo "Hello World";
-
+$domain = 'www.test.de';
 ?>
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimierter Titel für Suchmaschinen | Keyword</title>
+    <meta name="description" content="Hier steht eine aussagekräftige Beschreibung der Seite, die in den Suchergebnissen angezeigt wird (ca. 150-160 Zeichen).">
+    <link rel="canonical" href="https://<?= $domain ?>/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://<?= $domain ?>/">
+    <meta property="og:title" content="Optimierter Titel für Social Media">
+    <meta property="og:description" content="Ansprechende Kurzbeschreibung für das Teilen auf sozialen Netzwerken.">
+    <meta property="og:image" content="https://<?= $domain ?>/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://<?= $domain ?>/">
+    <meta property="twitter:title" content="Optimierter Titel für Twitter">
+    <meta property="twitter:description" content="Ansprechende Kurzbeschreibung für Twitter.">
+    <meta property="twitter:image" content="https://<?= $domain ?>/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/style.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/logo.svg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Hauptüberschrift der Seite (H1)</h1>
+            <p>Relevanter Inhalt mit Fokus auf Benutzerfreundlichkeit und Keywords.</p>
+            
+            <h2>Unterüberschrift (H2)</h2>
+            <p>Weiterführende Informationen im semantischen HTML-Standard.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Ihre Firma. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
