@@ -27,24 +27,15 @@ $domain = 'www.test.de';
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <!-- Custom Style -->
+
     <link rel="stylesheet" href="assets/style.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="assets/logo.svg" alt="Logo">
-        </div>
-    </header>
+  <main>
+    <div id="screen">runtime <br><br><br><br><br><br>testlauf</div>
+  </main>
 
-    <main>
-        <article>
-            <div id="screen">runtime</div>
-        </article>
-    </main>
-
-    <footer>
-        
-    </footer>
+  <div>test</div>
+       
 </body>
 </html>
