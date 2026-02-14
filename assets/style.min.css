@@ -43,6 +43,8 @@ main {
     /* Wichtig: Füllt den gesamten verfügbaren Platz im Main-Container */
     width: 80%;
     height: 100%;
+    color: black;
+
 
     background-color: rgba(255, 255, 255, 1.2);
 
