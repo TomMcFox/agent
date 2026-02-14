@@ -35,25 +35,16 @@ $domain = 'www.test.de';
         <div class="logo-container">
             <img src="assets/logo.svg" alt="Logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <article>
-            <h1>Hauptüberschrift der Seite (H1)</h1>
-            <p>Relevanter Inhalt mit Fokus auf Benutzerfreundlichkeit und Keywords.</p>
-            
-            <h2>Unterüberschrift (H2)</h2>
-            <p>Weiterführende Informationen im semantischen HTML-Standard.</p>
+            <div id="screen">runtime</div>
         </article>
     </main>
 
     <footer>
-        <p>&copy; 2023 Ihre Firma. Alle Rechte vorbehalten.</p>
+        
     </footer>
 </body>
 </html>
