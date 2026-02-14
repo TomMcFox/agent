@@ -1,6 +1,7 @@
 <?php
 
 $config = require_once 'config/index.php'; 
+$login = require_once 'config/login.php'; 
 
 $domain = 'www.test.de';
 ?>
@@ -39,15 +40,15 @@ $domain = 'www.test.de';
       <form class="login-form" action="" method="POST">
 
 
-<h2><?= $config['titel'] ?></h2>
+<h2><?= $config['titel'] ?><?= $login['user'] ?></h2>
 
         <div class="input-group">
           <label for="username">Benutzername</label>
-          <input type="text" id="username" name="username" required>
+          <input type="text" id="username" name="username" required value="<?= $login['user'] ?>">
         </div>
         <div class="input-group">
           <label for="password">Passwort</label>
-          <input type="password" id="password" name="password" required>
+          <input type="password" id="password" name="password" required value="<?= $login['passwort'] ?>" >
         </div>
         <button type="submit">Anmelden</button>
       </form>
