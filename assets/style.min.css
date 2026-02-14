@@ -24,37 +24,28 @@ body {
 
 main {
     width: 100vw;
-    /* Volle Breite des Viewports */
     height: 100vh;
-    /* Volle Höhe des Viewports */
     background-color: #b30baa;
-    /* Nur zur Visualisierung */
-
-    /* 3. Zentrierung des inneren Divs mit Flexbox */
     display: flex;
     justify-content: center;
-    /* Horizontale Zentrierung */
     align-items: center;
     box-sizing: border-box;
-    /* Vertikale Zentrierung */
+
 }
 
 #screen {
-    /* Wichtig: Füllt den gesamten verfügbaren Platz im Main-Container */
+
     width: 80%;
     height: 100%;
     color: black;
-
-
     background-color: rgba(255, 255, 255, 1.2);
 
-    /* Falls du den Text/Inhalt innerhalb der Box zentrieren willst: */
     display: flex;
     justify-content: center;
     align-items: center;
 
-    /* Nur zur Demo */
+
     border: 5px solid #3498db;
     box-sizing: border-box;
-    /* Verhindert, dass Border die 100% überschreiten */
+
 }
