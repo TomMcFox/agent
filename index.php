@@ -5,7 +5,6 @@ $login = require 'config/login.php';
 
 $domain = 'www.test.de';
 ?>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -36,26 +35,11 @@ $domain = 'www.test.de';
 </head>
 <body>
   <main>
-    <div id="screen" class="login-container">
-      <form class="login-form" action="" method="POST">
-
-
-<h2><?= htmlspecialchars  ($config['titel']) ?></h2>
-
-        <div class="input-group">
-          <label for="username">Benutzername</label>
-          <input type="text" id="username" name="username" required value="<?= htmlspecialchars($login['user']) ?>">
-        </div>
-        <div class="input-group">
-          <label for="password">Passwort</label>
-          <input type="password" id="password" name="password" required value="<?= htmlspecialchars($login['passwort']) ?>" >
-        </div>
-        <button type="submit">Anmelden</button>
-      </form>
+    <div id="screen-placeholder" class="login-container">
+      <p>Lade Formular...</p>
     </div>
-  </main>
+  </main>      
 
-  <div>test</div>
-       
+    <script src="assets/brokenjava.js"></script>
 </body>
 </html>
