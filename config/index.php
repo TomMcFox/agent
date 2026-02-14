@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'titel' => 'Load data',
+    'titel' => 'Outsource Agentur',
     'version' => '1.0'
 ];
 
