@@ -8,13 +8,19 @@ require_once __DIR__ . '/config/database.php';
 $titel =  $login['domain']['titel'];
 $domain = $login['domain']['url'];
 
-
 $db = Database::getInstance();
-if ($db instanceof PDO) {
-    echo "Die Verbindung steht und ist ein gültiges PDO-Objekt.";
-} else {
-    echo "Verbindung unterbrochen.";
+/* Check ob Datanbankverbindung erfolgreich 
+if ($db instanceof PDO) {echo "Die Verbindung steht und ist ein gültiges PDO-Objekt.";} else {echo "Verbindung unterbrochen.";}
+*/
+$id = 2;
+$stmt = $db->prepare("SELECT * FROM test WHERE id = :id");
+$stmt->execute(['id' => $id]);
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if (!empty($user)) {
+    echo "Hallo, " . $user['TEXT'];
 }
+
 
 ?>
 <!DOCTYPE html>

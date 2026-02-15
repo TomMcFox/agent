@@ -1,5 +1,7 @@
 <?php
 
+define('WEBSITE_ACCESS', true);
+
 $login =  require __DIR__ . '/config/login.php';
 ?>
 
