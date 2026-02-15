@@ -1,10 +1,19 @@
 <?php
 
-$config = require __DIR__ . '/config/index.php';
 $login =  require __DIR__ . '/config/login.php';
+require_once __DIR__ . '/config/database.php';
 
-$titel = $config['titel'];
-$domain = $config['domain'];
+$titel =  $login['domain']['titel'];
+$domain = $login['domain']['url'];
+
+
+$db = Database::getInstance();
+if ($db instanceof PDO) {
+    echo "Die Verbindung steht und ist ein gültiges PDO-Objekt.";
+} else {
+    echo "Verbindung unterbrochen.";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -44,3 +53,5 @@ $domain = $config['domain'];
     <script src="assets/brokenjava.js"></script>
 </body>
 </html>
+
+<?php $db = null; ?>
