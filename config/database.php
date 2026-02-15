@@ -1,5 +1,10 @@
 <?php
 
+if (!defined('WEBSITE_ACCESS')) {
+    header('HTTP/1.0 403 Forbidden');
+    exit('Direkter Zugriff verweigert.');
+}
+
 class Database {
     private static $instance = null;
     private $pdo;
