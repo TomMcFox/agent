@@ -2,6 +2,11 @@
 
 define('WEBSITE_ACCESS', true);
 
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
+ini_set('error_log', __DIR__ . '/php_error.log');
+
 $login =  require __DIR__ . '/config/login.php';
 require_once __DIR__ . '/config/database.php';
 
@@ -12,14 +17,15 @@ $db = Database::getInstance();
 /* Check ob Datanbankverbindung erfolgreich 
 if ($db instanceof PDO) {echo "Die Verbindung steht und ist ein gültiges PDO-Objekt.";} else {echo "Verbindung unterbrochen.";}
 */
+/*
 $id = 2;
 $stmt = $db->prepare("SELECT * FROM test WHERE id = :id");
 $stmt->execute(['id' => $id]);
-$user = $stmt->fetch(PDO::FETCH_ASSOC);
+$call = $stmt->fetch(PDO::FETCH_ASSOC);
 
-if (!empty($user)) {
-    echo "Hallo, " . $user['TEXT'];
-}
+
+$call['TEXT'];
+*/
 
 
 ?>

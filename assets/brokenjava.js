@@ -1,8 +1,5 @@
-/**
- * Wartet 3 Sekunden nach dem Laden der Seite und lädt dann das Login-Formular nach.
- */
+
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("Seite geladen. Formular wird in 3 Sekunden nachgeladen...");
 
     setTimeout(function () {
         const placeholder = document.getElementById("screen-placeholder");
