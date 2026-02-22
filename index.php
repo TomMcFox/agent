@@ -1,11 +1,13 @@
 <?php
 
 define('WEBSITE_ACCESS', true);
+define('WEBSITE_URL', 'https://' . $_SERVER['HTTP_HOST']);
+define('WEBSITE_ROOT', __DIR__);
 
 error_reporting(E_ALL);
 ini_set('display_errors', 0);
 ini_set('log_errors', 1);
-ini_set('error_log', __DIR__ . '/php_error.log');
+ini_set('error_log', WEBSITE_ROOT . '/php_error.log');
 
 $login =  require __DIR__ . '/config/login.php';
 require_once __DIR__ . '/config/database.php';

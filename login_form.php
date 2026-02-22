@@ -1,6 +1,10 @@
 <?php
 
 define('WEBSITE_ACCESS', true);
+require_once __DIR__ . '/config/database.php';
+$db = Database::getInstance();
+if ($db instanceof PDO) {echo "Die Verbindung steht und ist ein gültiges PDO-Objekt.";} else {echo "Verbindung unterbrochen.";}
+$db = null;
 
 $login =  require __DIR__ . '/config/login.php';
 ?>
